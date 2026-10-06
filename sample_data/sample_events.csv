@@ -1,0 +1,24 @@
+user_id,timestamp,event_type,product_id,amount,country,device
+101,2026-09-01T08:00:00Z,view,P-101,,United States,mobile
+101,2026-09-01T08:10:00Z,add_to_cart,P-101,,United States,mobile
+101,2026-09-01T08:20:00Z,purchase,P-101,129.50,United States,mobile
+101,2026-09-02T08:15:00Z,view,P-205,,United States,mobile
+101,2026-09-08T09:00:00Z,view,P-310,,United States,desktop
+101,2026-10-01T09:00:00Z,view,P-101,,United States,mobile
+102,2026-09-01T09:00:00Z,view,P-205,,Canada,desktop
+102,2026-09-01T09:05:00Z,add_to_cart,P-205,,Canada,desktop
+102,2026-09-01T09:15:00Z,purchase,P-205,49.99,Canada,desktop
+102,2026-09-02T10:00:00Z,view,P-450,,Canada,mobile
+103,2026-09-01T10:00:00Z,purchase,P-310,89.00,United Kingdom,tablet
+103,2026-09-02T10:00:00Z,view,P-310,,United Kingdom,tablet
+103,2026-09-03T10:00:00Z,add_to_cart,P-310,,United Kingdom,tablet
+104,2026-09-02T11:00:00Z,view,P-450,,Germany,mobile
+104,2026-09-02T11:05:00Z,add_to_cart,P-450,,Germany,mobile
+104,2026-09-02T11:10:00Z,purchase,P-450,15.00,Germany,mobile
+105,2026-09-08T12:00:00Z,view,P-101,,France,desktop
+105,2026-09-08T12:10:00Z,add_to_cart,P-101,,France,desktop
+105,2026-09-08T12:20:00Z,purchase,P-101,79.00,France,desktop
+105,2026-09-15T12:00:00Z,view,P-205,,France,mobile
+106,2026-09-15T13:00:00Z,view,P-205,,Canada,
+107,2026-10-01T14:00:00Z,view,P-310,,Germany,mobile
+101,2026-09-01T08:00:00Z,view,P-101,,United States,mobile

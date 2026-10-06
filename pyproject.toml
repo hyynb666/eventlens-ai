@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eventlens-ai"
+version = "0.1.0"
+description = "A lightweight analytics assistant for tabular and product event data."
+readme = "README.md"
+requires-python = ">=3.11"
+keywords = ["analytics", "streamlit", "product-analytics", "data-analysis", "ai"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Web Environment",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = [
+    "pandas>=2.0",
+    "streamlit>=1.50",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+include = ["eventlens*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
