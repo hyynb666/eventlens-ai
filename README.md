@@ -77,6 +77,20 @@ If PowerShell blocks virtual environment activation, run `Set-ExecutionPolicy -S
 
 Upload `sample_data/sample_events.csv` to try the app. All non-AI analysis features work without provider configuration.
 
+## Deploy on Streamlit Community Cloud
+
+The app entry point is `app.py`. To deploy the public repository, sign in to [Streamlit Community Cloud](https://share.streamlit.io/) with GitHub, choose **Create app**, and enter:
+
+- Repository: `hyynb666/eventlens-ai`
+- Branch: `main`
+- Main file path: `app.py`
+
+Use Python 3.11 or newer in **Advanced settings**. The root `requirements.txt` lists the app's runtime dependencies for Community Cloud; `pyproject.toml` keeps the package metadata and dependency declarations used by local installation. No API key or other secret is required to deploy or use core analytics. To enable AI later, add `OPENAI_API_KEY` in the app's Community Cloud **Settings → Secrets**; do not commit a key to the repository.
+
+The sample CSV is included at `sample_data/sample_events.csv`. Download that file from the repository and upload it in the deployed app to try the included data. The app does not read a machine-specific local path.
+
+To open the deployed app from Windows, replace the example URL in `launch_eventlens_online.bat` with the URL assigned by Streamlit Community Cloud and double-click the batch file. Run `create_desktop_shortcut.ps1` to add a desktop shortcut that uses the same launcher.
+
 ## AI Setup
 
 Natural-language analysis is optional. Set environment variables in the same PowerShell window before launching Streamlit:
